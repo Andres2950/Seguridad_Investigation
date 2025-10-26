@@ -2,7 +2,7 @@
 #include <openssl/evp.h>
 #include <stdlib.h>
 
-const char* hash = "9c9aab851fca2fbb611f966e8d41d7ef\0";
+const char* hash = "d2a971dcc0b7026a5e2bc26ddcef95a2\0";
 
 int string_len(const char* str) {
     int i = 0;
