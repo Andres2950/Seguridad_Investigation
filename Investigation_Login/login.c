@@ -15,7 +15,9 @@ int string_eq(const char* str1, const char* str2){
     if (str1[i] != str2[i]) return 0;
     return 1;
 }
-// Obtenido de: https://blog.magnatox.com/posts/c_hashing_files_with_openssl/ 
+// Obtenido de: 
+//		T.Martínez, "C Hashing Files With OpenSSL", Jul 2020,
+//		url: https://blog.magnatox.com/posts/c_hashing_files_with_openssl/ 
 char* md5_string(const char *str) {
 	char            buff[128];	                /* buffer for hash */
 	unsigned int    md_len;				        /* stores hash length */
