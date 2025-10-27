@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <openssl/evp.h>
 #include <stdlib.h>
-const char* hash = "d2a971dcc0b7026a5e2bc26ddcef95a2\0";
 int string_len(const char* str) {
     int i = 0;
     while (str[i] != '\0') i++;
@@ -33,6 +32,7 @@ char* md5_string(const char *str) {
     }
     return out;
 }
+const char* hash = "d2a971dcc0b7026a5e2bc26ddcef95a2\0";
 void login(const char* entry) {
     if (string_eq(entry, hash)) {
         printf("Login Accepted\n");
